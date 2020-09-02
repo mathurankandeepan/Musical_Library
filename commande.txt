@@ -1,0 +1,7 @@
+plot "uniques_liste.txt" using 1:2 with lines
+replot "uniques_arbre.txt" using 1:2 with lines
+replot "uniques_tabdyn.txt" using 1:2 with lines
+replot "uniques_hachage.txt" using 1:2 with lines
+set term postscript portrait
+set output "Courbe_unique.ps"
+replot
